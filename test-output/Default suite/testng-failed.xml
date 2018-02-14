@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Com.OpenCart.Testcases.OpenCart_RegestrationTest">
+        <methods>
+          <include name="registration"/>
+          <include name="reviewProd" invocation-numbers="0"/>
+          <include name="openApp"/>
+          <include name="intialize"/>
+          <include name="getResult"/>
+          <include name="initializeReport"/>
+          <include name="endReport"/>
+          <include name="addToWishList"/>
+        </methods>
+      </class> <!-- Com.OpenCart.Testcases.OpenCart_RegestrationTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
