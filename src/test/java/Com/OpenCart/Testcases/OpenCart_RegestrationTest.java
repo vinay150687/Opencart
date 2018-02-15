@@ -71,6 +71,7 @@ public class OpenCart_RegestrationTest extends ExtentReportsBaseClass {
 		// Test Step :001
 		driver.get(prop.getProperty("url"));
 		System.out.println("opencart app launched");
+		
 		// logger.log(LogStatus.PASS, "Method \"openApp\" is passed");
 		// Thread.sleep(5000);
 		// driver.findElement(By.xpath("(//a[text()='login'])")).click();
@@ -223,6 +224,7 @@ public class OpenCart_RegestrationTest extends ExtentReportsBaseClass {
 			String Warningmsg = driver.findElement(
 					By.xpath(".//div[@id='tab-review']/div[2]")).getText();
 			System.out.println("The message is " + Warningmsg);
+			System.out.println("Hello");
 			Assert.assertEquals(
 					"Thank you for your review. It has been submitted to the webmaster for approval.",
 					Warningmsg);
