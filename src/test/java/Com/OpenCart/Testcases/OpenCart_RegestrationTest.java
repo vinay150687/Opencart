@@ -232,10 +232,10 @@ public class OpenCart_RegestrationTest extends ExtentReportsBaseClass {
 				By.xpath(".//*[@id='tab-review']/input[" + (RatingInt + 1)
 						+ "]")).click();
 		System.out.println("Please Enter Captha:");
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		/*Scanner sc = new Scanner(System.in);
 		String captcha = sc.nextLine();*/
-		driver.findElement(By.xpath(".//*[@name='captcha']")).clear();
+		//driver.findElement(By.xpath(".//*[@name='captcha']")).clear();
 		/*driver.findElement(By.xpath(".//*[@name='captcha']")).sendKeys(captcha);*/
 		
 		Thread.sleep(10000);
