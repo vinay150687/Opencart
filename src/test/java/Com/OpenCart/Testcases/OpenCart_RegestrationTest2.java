@@ -40,7 +40,7 @@ import Com.OpenCart.Utils.GenericMethods;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-public class OpenCart_RegestrationTest extends ExtentReportsBaseClass {
+public class OpenCart_RegestrationTest2 extends ExtentReportsBaseClass {
 	private static final String depends = null;
 	private static final String dependsonMethods = null;
 	private WebDriver driver;
@@ -50,9 +50,10 @@ public class OpenCart_RegestrationTest extends ExtentReportsBaseClass {
 	DesiredCapabilities capability;
 	public String nodeURL = "http://10.159.34.191:4444/wd/hub";
 	//@Parameters("browser")
-	@BeforeTest
+	
 	//@Parameters("browser")
-	public void intialize() throws MalformedURLException
+	@BeforeTest	
+	public void intialize( ) throws MalformedURLException
 
 	{ 
 		
@@ -61,21 +62,15 @@ public class OpenCart_RegestrationTest extends ExtentReportsBaseClass {
 		driver = new ChromeDriver();*/
 		
 		
-		
-		DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
-		capability.setCapability("nativeEvents", false);
-		capability.setCapability("unexpectedAlertBehaviour", "accept");
-		capability.setCapability("ignoreProtectedModeSettings", true);
-		capability.setCapability("disable-popup-blocking", true);
-		capability.setCapability("enablePersistentHover", true);
-		capability.setCapability("ignoreZoomSetting", true);
-        capability.setBrowserName("internet explorer");
-        //capability.setVersion("8.0");
-      capability.setPlatform(Platform.WINDOWS);
-      driver = new RemoteWebDriver(new URL(nodeURL), capability);
-		
-		
-		
+		capability = new DesiredCapabilities();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("disable-infobars");
+        capability.setCapability(ChromeOptions.CAPABILITY, options);
+
+        capability.setBrowserName("chrome");
+        capability.setPlatform(Platform.WINDOWS);
+        driver = new RemoteWebDriver(new URL(nodeURL), capability);
+	
 		driver.manage().window().maximize();
 		driver.manage().timeouts()
 				.implicitlyWait(WAIT_TIME, TimeUnit.MILLISECONDS);
@@ -232,7 +227,7 @@ public class OpenCart_RegestrationTest extends ExtentReportsBaseClass {
 				By.xpath(".//*[@id='tab-review']/input[" + (RatingInt + 1)
 						+ "]")).click();
 		System.out.println("Please Enter Captha:");
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		/*Scanner sc = new Scanner(System.in);
 		String captcha = sc.nextLine();*/
 		driver.findElement(By.xpath(".//*[@name='captcha']")).clear();

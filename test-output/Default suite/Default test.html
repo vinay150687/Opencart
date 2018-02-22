@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 12 18:14:21 IST 2018</td>
+<td>Started on:</td><td>Thu Feb 22 14:54:55 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>51 seconds (51956 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (62 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,91 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.intialize()'><b>intialize</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method intialize but has not been marked @Optional or defined
+in C:\Users\ko398195\AppData\Local\Temp\testng-eclipse-189647389\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1225439493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1225439493'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method intialize but has not been marked @Optional or defined
+in C:\Users\ko398195\AppData\Local\Temp\testng-eclipse-189647389\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.initializeReport()'><b>initializeReport</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest</td>
+<td></td>
+<td>0</td>
+<td>Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679</td></tr>
+<tr>
+<td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.getResult()'><b>getResult</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest</td>
+<td></td>
+<td>0</td>
+<td>Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679</td></tr>
+<tr>
+<td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.endReport()'><b>endReport</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest</td>
+<td></td>
+<td>0</td>
+<td>Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,29 +159,188 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.addToWishList()'><b>addToWishList</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest<br>Test method: add to Wish list</td>
-<td></td>
-<td>11</td>
-<td>Com.OpenCart.Testcases.OpenCart_RegestrationTest@4501b7af</td></tr>
+<td><div><pre>java.lang.Throwable: Method OpenCart_RegestrationTest.addToWishList()[pri:0, instance:Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1549409129", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1549409129'><pre>java.lang.Throwable: Method OpenCart_RegestrationTest.addToWishList()[pri:0, instance:Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
 <tr>
 <td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.openApp()'><b>openApp</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest<br>Test method: Launch openCart application</td>
-<td></td>
-<td>1</td>
-<td>Com.OpenCart.Testcases.OpenCart_RegestrationTest@4501b7af</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method intialize but has not been marked @Optional or defined
+in C:\Users\ko398195\AppData\Local\Temp\testng-eclipse-189647389\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace143110009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace143110009'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method intialize but has not been marked @Optional or defined
+in C:\Users\ko398195\AppData\Local\Temp\testng-eclipse-189647389\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:203)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679</td></tr>
 <tr>
-<td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.registration()'><b>registration</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest<br>Parameters: vinay, kona, vinaykona@gmail.com, 9000788667, 5425, wipro, 2345, blueraod, navystreet, hyderabad, 500019, India, Goa, Vinay@24, Vinay@24</td>
-<td></td>
-<td>5</td>
-<td>Com.OpenCart.Testcases.OpenCart_RegestrationTest@4501b7af</td></tr>
+<td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.registration()'><b>registration</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest</td>
+<td><div><pre>java.lang.Throwable: Method OpenCart_RegestrationTest.registration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1037324811", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1037324811'><pre>java.lang.Throwable: Method OpenCart_RegestrationTest.registration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
 <tr>
-<td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.reviewProd()'><b>reviewProd</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest<br>Parameters: Amala, 2, Good</td>
-<td></td>
-<td>16</td>
-<td>Com.OpenCart.Testcases.OpenCart_RegestrationTest@4501b7af</td></tr>
-<tr>
-<td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.reviewProd()'><b>reviewProd</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest<br>Parameters: Kamal, 3, kona vinay dhhdshhdhdhhdhsalsjghkdjsfghfdkhjk</td>
-<td></td>
-<td>11</td>
-<td>Com.OpenCart.Testcases.OpenCart_RegestrationTest@4501b7af</td></tr>
+<td title='Com.OpenCart.Testcases.OpenCart_RegestrationTest.reviewProd()'><b>reviewProd</b><br>Test class: Com.OpenCart.Testcases.OpenCart_RegestrationTest</td>
+<td><div><pre>java.lang.Throwable: Method OpenCart_RegestrationTest.reviewProd(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1627821297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1627821297'><pre>java.lang.Throwable: Method OpenCart_RegestrationTest.reviewProd(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Com.OpenCart.Testcases.OpenCart_RegestrationTest@29774679] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1068)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
 </table><p>
 </body>
 </html>
